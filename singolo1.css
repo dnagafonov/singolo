@@ -176,16 +176,15 @@ body {
 }
 
 .slide img {
+    position: relative;
+    top: 12px;
+    right: 1px;
     border-radius: 25px;
-    box-shadow: 25px 25px #ce5d56;
 }
 
 .slide img:last-child {
     position: relative;
-    right: 3px;
-
-    transform: rotate(90deg);
-    box-shadow: 25px -25px #ce5d56;
+    left: 70px;
 }
 
 /* Services */
