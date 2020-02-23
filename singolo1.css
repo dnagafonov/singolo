@@ -13,6 +13,23 @@ body {
     width: 1020px;
 }
 
+.divider {
+    height: 6px;
+    width: 100%;
+}
+
+.header + .divider {
+    background-color: #323746;
+}
+
+.slider + .divider {
+    background-color: #ea676b;
+}
+
+.services + .divider {
+    background-color: #fff;
+}
+
 /* Header */
 
 .header {
@@ -37,32 +54,29 @@ body {
     text-decoration: none;
 }
 
-.header-divider {
-    height: 6px;
-    width: 100%;
-
-    background-color:#323746;
-}
-
 .logo {
-    position: relative;
     display: inline-flex;
 
-
-    font-stretch: condensed;
     line-height: 25px;
 
     text-transform: uppercase;
 }
+
 .logo__decoration {
     font-size: 25px;
     color: #f06c64;
 }
 
 .header__navigation {
-    position: absolute;
-    top: 42px;
-    right: 40px;
+    position: relative;
+    top: 5px;
+    left: 2px;
+
+    letter-spacing: -0.001rem;
+}
+
+.header__navigation li:first-child a {
+    color: #f06c64;
 }
 
 .navigation {
@@ -108,7 +122,7 @@ body {
 
 .slider {
     display: flex;
-    height: 600px;
+    height: 594px;
     width: 100%;
 
     background-color: #f06c64;
@@ -129,7 +143,7 @@ body {
 .slider__right-arrow i,
 .slider__left-arrow i{
     position: relative;
-    bottom: 5px;
+    bottom: 1px;
 
     color: #ca4549;
 }
@@ -166,21 +180,23 @@ body {
 }
 
 .slide img {
+    position: relative;
+    top: 15px;
+    right: 1px;
     border-radius: 25px;
-    box-shadow: 25px 25px #ce5d56;
 }
 
 .slide img:last-child {
     position: relative;
-    right: 3px;
-
-    transform: rotate(90deg);
-    box-shadow: 25px -25px #ce5d56;
+    left: 70px;
 }
 
 /* Services */
 
 .services {
+    width: 100%;
+    height: 494px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
